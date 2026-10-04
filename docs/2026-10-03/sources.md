@@ -22,6 +22,9 @@ Reviewed **October 3, 2026**. Official sources establish systems and effects; co
 - <span class="source-badge">Community</span> [BG-Wiki Limit Breaks](https://www.bg-wiki.com/ffxi/Category:Limit_Break_Quests) — current quest names, item counts, merit requirements, and battle tips.
 - <span class="source-badge">Community</span> [BG-Wiki Quickstart 1–119](https://www.bg-wiki.com/ffxi/Quickstart_1-119_Guide) — cross-check the i117/i119 bridge and content unlocks.
 - <span class="source-badge">Community</span> [Piracy for Bilgerats: a COR guide](https://www.bg-wiki.com/ffxi/User%3AArkevorkhat/Piracy_for_Bilgerats%3A_A_Corsair%27s_Guide) — current role-based `/WAR`, `/DRG`, `/NIN`, and `/DNC` recommendations.
+- <span class="source-badge">Community</span> [BG-Wiki Dancer](https://www.bg-wiki.com/ffxi/Dancer) — DNC ability and job-trait level requirements used by the 37–49 detour.
+- <span class="source-badge">Community</span> [BG-Wiki Berserk](https://www.bg-wiki.com/ffxi/Berserk) — WAR15 requirement and the attack/defense tradeoff behind the DNC/WAR recommendation.
+- <span class="source-badge">Community</span> [Community Dancer Guide](https://www.bg-wiki.com/ffxi/Community_Dancer_Guide) — situational support-job choices for DNC as a level-99 main job.
 - <span class="source-badge">Community</span> [Support Job](https://www.bg-wiki.com/ffxi/Support_Job) — normal level-49 cap at main-job level 99 and Master Level increases up to 59.
 
 ## How to maintain this guide

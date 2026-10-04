@@ -2,6 +2,7 @@
 	- [Battle Plan](/2026-10-03/battle-plan.md)
 	- [Return Setup](/2026-10-03/return-setup.md)
 	- [COR 75–99](/2026-10-03/cor-75-99.md)
+	- [DNC 37–49 Detour](/2026-10-03/dnc-37-49.md)
 	- [After 99](/2026-10-03/post-99.md)
 	- [Weekend-ready COR](/2026-10-03/weekend-cor.md)
 	- [Choose the Next Job](/2026-10-03/choose-next-job.md)
