@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta
+			name="description"
+			content="A personalized, mostly-solo battle plan for returning to Final Fantasy XI after the level-75 era."
+		/>
+		<title>FFXI Return Command Center</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/themes/vue.css" />
+		<link rel="stylesheet" href="./assets/theme.css" />
+	</head>
+	<body>
+		<div id="app">Opening the return plan…</div>
+		<noscript>
+			This guide requires JavaScript for navigation. You can still
+			<a href="./2026-10-03/battle-plan.md">read the battle plan as Markdown</a>.
+		</noscript>
+		<script type="module">
+			import { createProgressStore } from './assets/progress-model.js'
+			import { installProgressPlugin } from './assets/progress-plugin.js'
+			import { GUIDE_TASKS } from './assets/task-catalog.js'
+
+			const store = createProgressStore(window.localStorage, 'ffxi-return-progress-v1')
+			window.$docsify = {
+				name: 'FFXI Return Command Center',
+				repo: 'https://github.com/kennymcginnis/ffxi-guide',
+				homepage: '2026-10-03/battle-plan.md',
+				loadSidebar: true,
+				relativePath: true,
+				subMaxLevel: 2,
+				auto2top: true,
+				plugins: [
+					(hook, vm) =>
+						installProgressPlugin(hook, vm, {
+							tasks: GUIDE_TASKS,
+							store,
+							root: () => document.querySelector('.markdown-section'),
+						}),
+				],
+				search: {
+					placeholder: 'Search the battle plan',
+					noData: 'No matching guide entry',
+					depth: 3,
+					namespace: 'ffxi-return-2026-10-03-v1',
+				},
+			}
+
+			function loadScript(src) {
+				return new Promise((resolve, reject) => {
+					const script = document.createElement('script')
+					script.src = src
+					script.onload = resolve
+					script.onerror = reject
+					document.body.append(script)
+				})
+			}
+
+			await loadScript('https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/docsify.min.js')
+			await loadScript('https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/plugins/search.min.js')
+		</script>
+	</body>
+</html>
