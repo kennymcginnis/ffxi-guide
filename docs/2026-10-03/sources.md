@@ -21,6 +21,8 @@ Reviewed **October 3, 2026**. Official sources establish systems and effects; co
 - <span class="source-badge">Community</span> [BG-Wiki Abyssea Guide](https://www.bg-wiki.com/ffxi/Abyssea_Guide) — access, time extensions, and zone mechanics.
 - <span class="source-badge">Community</span> [BG-Wiki Limit Breaks](https://www.bg-wiki.com/ffxi/Category:Limit_Break_Quests) — current quest names, item counts, merit requirements, and battle tips.
 - <span class="source-badge">Community</span> [BG-Wiki Quickstart 1–119](https://www.bg-wiki.com/ffxi/Quickstart_1-119_Guide) — cross-check the i117/i119 bridge and content unlocks.
+- <span class="source-badge">Community</span> [Piracy for Bilgerats: a COR guide](https://www.bg-wiki.com/ffxi/User%3AArkevorkhat/Piracy_for_Bilgerats%3A_A_Corsair%27s_Guide) — current role-based `/WAR`, `/DRG`, `/NIN`, and `/DNC` recommendations.
+- <span class="source-badge">Community</span> [Support Job](https://www.bg-wiki.com/ffxi/Support_Job) — normal level-49 cap at main-job level 99 and Master Level increases up to 59.
 
 ## How to maintain this guide
 
