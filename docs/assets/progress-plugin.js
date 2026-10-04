@@ -24,6 +24,7 @@ export function extractTasks(root) {
 		if (!item || !checkbox || !marker.dataset.taskId) return []
 
 		checkbox.disabled = false
+		checkbox.setAttribute?.('aria-label', item.textContent.trim())
 		return [
 			{
 				id: marker.dataset.taskId,
@@ -61,8 +62,18 @@ export function renderProgress(root, { tasks, progress, persistent }) {
 	}
 	const temporary = root.querySelector('[data-progress-temporary]')
 	if (temporary) temporary.hidden = persistent
+	for (const phaseSlot of root.querySelectorAll('[data-progress-phase]')) {
+		const phaseTasks = tasks.filter(
+			(task) => task.phase === phaseSlot.dataset.progressPhase,
+		)
+		const phaseProgress = calculateProgress(
+			phaseTasks.map((task) => task.id),
+			progress.completedTaskIds,
+		)
+		phaseSlot.textContent = `${phaseProgress.completed}/${phaseProgress.total} · ${phaseProgress.percent}%`
+	}
 	const post99 = root.querySelector('[data-post-99]')
-	if (post99) post99.hidden = !completed.has('level-99')
+	if (post99) post99.hidden = !completed.has(post99.dataset.progressTaskId)
 }
 
 function downloadProgress(progress) {

@@ -8,6 +8,14 @@ export function createEmptyProgress() {
 	}
 }
 
+export function getSafeStorage(getStorage) {
+	try {
+		return getStorage()
+	} catch {
+		return null
+	}
+}
+
 function asKnownTaskSet(knownTaskIds) {
 	return knownTaskIds instanceof Set ? knownTaskIds : new Set(knownTaskIds)
 }
@@ -71,6 +79,9 @@ export function parseProgressImport(text, knownTaskIds) {
 
 	if (!Array.isArray(value.completedTaskIds)) {
 		return { ok: false, error: 'That backup does not contain a task list.' }
+	}
+	if (!value.completedTaskIds.every((id) => typeof id === 'string')) {
+		return { ok: false, error: 'That backup contains invalid task IDs.' }
 	}
 
 	return { ok: true, value: normalizeProgress(value, knownTaskIds) }

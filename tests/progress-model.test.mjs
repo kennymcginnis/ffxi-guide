@@ -6,6 +6,7 @@ import {
 	createEmptyProgress,
 	createProgressStore,
 	findNextTask,
+	getSafeStorage,
 	normalizeProgress,
 	parseProgressImport,
 } from '../docs/assets/progress-model.js'
@@ -74,6 +75,22 @@ test('rejects malformed and incompatible progress imports', () => {
 			ok: false,
 			error: 'That backup uses an unsupported progress version.',
 		},
+	)
+	assert.deepEqual(
+		parseProgressImport('{"version":1,"completedTaskIds":[7]}', new Set()),
+		{
+			ok: false,
+			error: 'That backup contains invalid task IDs.',
+		},
+	)
+})
+
+test('returns no browser storage when the storage getter throws', () => {
+	assert.equal(
+		getSafeStorage(() => {
+			throw new DOMException('Blocked', 'SecurityError')
+		}),
+		null,
 	)
 })
 

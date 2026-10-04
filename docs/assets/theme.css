@@ -76,6 +76,25 @@ progress {
 	width: 100%;
 }
 
+.phase-progress {
+	display: grid;
+	gap: 0.35rem;
+	list-style: none;
+	margin: 1rem 0 0;
+	padding: 0;
+}
+
+.phase-progress li {
+	display: flex;
+	gap: 1rem;
+	justify-content: space-between;
+}
+
+.phase-progress strong {
+	color: var(--theme-color);
+	white-space: nowrap;
+}
+
 .progress-actions {
 	display: flex;
 	flex-wrap: wrap;

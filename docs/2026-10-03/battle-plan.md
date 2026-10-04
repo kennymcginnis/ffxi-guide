@@ -11,6 +11,13 @@
   <strong>Battle-plan progress</strong>
   <p data-progress-summary>0 of 27 tasks complete · 0%</p>
   <progress data-progress-bar max="100" value="0">0%</progress>
+  <ul class="phase-progress" aria-label="Progress by phase">
+    <li><span>Return setup</span><strong data-progress-phase="return">0/5 · 0%</strong></li>
+    <li><span>COR 75–99</span><strong data-progress-phase="level">0/11 · 0%</strong></li>
+    <li><span>After 99</span><strong data-progress-phase="post-99">0/4 · 0%</strong></li>
+    <li><span>Weekend COR</span><strong data-progress-phase="weekend">0/5 · 0%</strong></li>
+    <li><span>Future jobs</span><strong data-progress-phase="future">0/2 · 0%</strong></li>
+  </ul>
   <p data-progress-temporary hidden>Progress is temporary in this browser session because local storage is unavailable.</p>
   <p data-progress-status role="status" aria-live="polite"></p>
   <div class="progress-actions" aria-label="Progress backup controls">
@@ -34,7 +41,7 @@ Do not level BRD first. Modern leveling is not especially slow for BRD with Trus
 4. **Become group-useful:** build the small roll toolkit and habits in [Weekend-ready COR](weekend-cor.md).
 5. **Choose for fun:** once the foundation works, use [Choose the Next Job](choose-next-job.md) rather than spreading effort across the whole roster.
 
-<div class="callout" data-post-99 hidden>
+<div class="callout" data-post-99 data-progress-task-id="level-99" hidden>
   <strong>Level 99 unlocked</strong>
   <p>Your next objective is item level, not Master Levels. Open the <a href="#/2026-10-03/post-99">post-99 queue</a>.</p>
 </div>

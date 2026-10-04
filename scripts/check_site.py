@@ -55,8 +55,14 @@ def validate_site(docs_root: Path, catalog_path: Path) -> list[str]:
             markers.extend(TASK_MARKER.findall(text))
             dashboard_references.extend(DASHBOARD_TASK.findall(text))
         for raw_target in MARKDOWN_LINK.findall(text):
+            target = raw_target.strip().split(maxsplit=1)[0].strip("<>")
+            if relative.name == "_sidebar.md":
+                parts = urlsplit(target)
+                if not parts.scheme and not target.startswith(("/", "#")):
+                    errors.append(
+                        f"_sidebar.md: Docsify route '{target}' must start with '/'"
+                    )
             if not _markdown_target_exists(docs_root, path, raw_target):
-                target = raw_target.strip().split(maxsplit=1)[0].strip("<>")
                 errors.append(f"{relative}: missing target '{target}'")
 
     marker_counts = Counter(markers)

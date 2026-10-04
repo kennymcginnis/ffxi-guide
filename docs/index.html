@@ -18,17 +18,21 @@
 			<a href="./2026-10-03/battle-plan.md">read the battle plan as Markdown</a>.
 		</noscript>
 		<script type="module">
-			import { createProgressStore } from './assets/progress-model.js'
+			import { createProgressStore, getSafeStorage } from './assets/progress-model.js'
 			import { installProgressPlugin } from './assets/progress-plugin.js'
 			import { GUIDE_TASKS } from './assets/task-catalog.js'
 
-			const store = createProgressStore(window.localStorage, 'ffxi-return-progress-v1')
+			const store = createProgressStore(
+				getSafeStorage(() => window.localStorage),
+				'ffxi-return-progress-v1',
+			)
 			window.$docsify = {
 				name: 'FFXI Return Command Center',
 				repo: 'https://github.com/kennymcginnis/ffxi-guide',
 				homepage: '2026-10-03/battle-plan.md',
 				loadSidebar: true,
 				relativePath: true,
+				alias: { '/.*/_sidebar.md': '/_sidebar.md' },
 				subMaxLevel: 2,
 				auto2top: true,
 				plugins: [
