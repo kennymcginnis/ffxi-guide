@@ -7,6 +7,7 @@
 	- [Weekend-ready COR](/2026-10-03/weekend-cor.md)
 	- [Choose the Next Job](/2026-10-03/choose-next-job.md)
 - Reference
+	- [Open-tab Priorities](/research/2026-10-07-open-tab-prioritization.md)
 	- [2010 Roster](/2026-10-03/roster.md)
 	- [What Changed Since 2010](/2026-10-03/since-2010.md)
 	- [Sources and Freshness](/2026-10-03/sources.md)
