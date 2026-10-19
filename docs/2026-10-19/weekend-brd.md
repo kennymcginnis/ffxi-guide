@@ -12,6 +12,8 @@ Use an accessible `All Songs +` instrument such as **Eminent Flute** or **Linos*
 
 - [ ] <span data-task-id="brd-three-song" data-task-phase="brd" data-task-required="true"></span> **Obtain and learn a three-song instrument.** Target **Terpander**, Oboro's BRD job-specific instrument, or redeem a Kupon W-Job if one is available. A crafted **Blurred Harp** is an Su2 alternative after 100 BRD Job Points.
 
+For the normal Oboro route, first satisfy one of his qualifying battle clears, then gather **Ebony Harp**, **Shofar**, **Cehuetzi Pelt**, and 150 of a single type: **Pluton**, **Beitetsu**, or **Riftborn Boulder**. The base Terpander already grants the extra song; its later augment is useful but does not block this milestone.
+
 The extra-song instrument creates the slot; it is not automatically the best instrument for the final song's potency. Practise the dummy-song and instrument-swapping sequence until three intended songs can be applied and refreshed without erasing the wrong one. See the [song-slot mechanics](https://www.bg-wiki.com/ffxi/Category%3AString_instrument) and [Terpander](https://www.bg-wiki.com/ffxi/Terpander) before choosing the acquisition route.
 
 ## 3. Build the support floor
