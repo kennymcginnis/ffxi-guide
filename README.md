@@ -1,14 +1,15 @@
 # FFXI Progression Command Center
 
-A personal, mostly-solo progression plan for Final Fantasy XI with occasional weekend group play. The current guide is tailored to seven level-99 jobs in starter i119 equipment, with COR as the group focus, BLU as the solo progression job, and THF as the farming tool.
+A personal, mostly-solo progression plan for Final Fantasy XI with occasional weekend group play. The current guide is tailored to seven level-99 jobs in starter i119 equipment, with COR as the quick group-entry job, BRD as the long-term group main, BLU as the solo progression job, and THF as the farming tool.
 
 The current route is:
 
 1. finish any remaining Intermediate Records of Eminence objectives;
-2. build a practical BLU spell library and comfortable solo Ambuscade clear;
-3. buy Compensator and establish the minimum useful COR roll kit;
-4. keep THF focused on named farms rather than a third full gear project;
-5. use the session, weekly, and monthly routine without treating every timer as mandatory.
+2. buy Compensator and establish the minimum useful COR roll kit for quick weekend entry;
+3. always advance one BRD succession project toward a reliable three-song support floor and eventual COR replacement;
+4. build a practical BLU spell library and comfortable solo Ambuscade clear;
+5. keep THF focused on named farms rather than another full gear project;
+6. use the session, weekly, and monthly routine without treating every timer as mandatory.
 
 ## Local preview
 

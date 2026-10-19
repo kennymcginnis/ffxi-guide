@@ -31,6 +31,8 @@ Core return sources reviewed **October 3, 2026**; current progression sources re
 - <span class="source-badge">Community</span> [Community Dancer Guide](https://www.bg-wiki.com/ffxi/Community_Dancer_Guide) — situational support-job choices for DNC as a level-99 main job.
 - <span class="source-badge">Community</span> [Support Job](https://www.bg-wiki.com/ffxi/Support_Job) — normal level-49 cap at main-job level 99 and Master Level increases up to 59.
 - <span class="source-badge">Community</span> [Domain Invasion rewards](https://www.bg-wiki.com/ffxi/Domain_Invasion_Rewards) — Zurim's operational reward catalogue, including Compensator.
+- <span class="source-badge">Community</span> [Song mechanics](https://www.bg-wiki.com/ffxi/Category%3AString_instrument) — active-song limits, skill interaction, potency, and duration mechanics used by the BRD succession plan.
+- <span class="source-badge">Community</span> [Terpander](https://www.bg-wiki.com/ffxi/Terpander) and [Blurred Harp](https://www.bg-wiki.com/ffxi/Blurred_Harp) — practical three-song instrument routes and equipment requirements.
 
 ## How to maintain this guide
 

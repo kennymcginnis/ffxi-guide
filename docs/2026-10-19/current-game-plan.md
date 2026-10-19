@@ -1,19 +1,25 @@
 # Current Game Plan
 
-> Seven jobs are 99, the expansion stories are complete, and starter i119 is equipped. The next phase is depth: one solo engine, one farming tool, and one group role.
+> Seven jobs are 99, the expansion stories are complete, and starter i119 is equipped. COR is the quick route into weekend parties; BRD is the intended long-term replacement and always has a parallel project.
 
 <div class="next-move">
   <strong>Your next move</strong>
   <p data-progress-next>Confirm the Intermediate RoE objectives are complete</p>
 </div>
 
+<div class="next-move">
+  <strong>Active BRD succession project</strong>
+  <p data-progress-next-phase="brd">Finish BRD's spellbook, skills, and basic macros</p>
+</div>
+
 <div class="progress-card">
   <strong>Current-plan progress</strong>
-  <p data-progress-summary>0 of 10 tasks complete · 0%</p>
+  <p data-progress-summary>0 of 15 tasks complete · 0%</p>
   <progress data-progress-bar max="100" value="0">0%</progress>
   <ul class="phase-progress" aria-label="Progress by phase">
     <li><span>Foundation</span><strong data-progress-phase="foundation">0/1 · 0%</strong></li>
     <li><span>Group COR</span><strong data-progress-phase="cor">0/4 · 0%</strong></li>
+    <li><span>BRD succession</span><strong data-progress-phase="brd">0/5 · 0%</strong></li>
     <li><span>Solo tools</span><strong data-progress-phase="solo">0/3 · 0%</strong></li>
     <li><span>Weekend readiness</span><strong data-progress-phase="weekend">0/2 · 0%</strong></li>
   </ul>
@@ -26,15 +32,16 @@
   </div>
 </div>
 
-## The three-job core
+## The four-job core
 
 | Job | Assignment | What “good enough” means now |
 | --- | --- | --- |
 | **BLU** | Solo progression | A practical spell library plus physical, magical, and survival sets that can clear forgiving content with Trusts |
 | **THF** | Targeted farming | Reliable Treasure Hunter application and enough kill speed to farm a named material efficiently |
-| **COR** | Weekend groups | Correct rolls, longer roll duration, safe idle gear, clear macros, and one dependable damage route later |
+| **COR** | Immediate weekend entry | Correct rolls, longer roll duration, safe idle gear, and clear macros—the shortest route into approachable groups |
+| **BRD** | Long-term group main | A reliable three-song rotation first, then four-song and premium-instrument progression as longer projects |
 
-Keep WAR, RDM, SCH, and BRD at starter i119 until a specific event or a genuine preference gives one of them a job. Seven simultaneous gear projects would turn every reward into an inventory problem.
+Keep WAR, RDM, and SCH at starter i119 until a specific event gives one of them a job. BRD is the intentional exception: it receives one active project at all times, even while COR handles current group invitations.
 
 ## First: confirm the account foundation
 
@@ -42,7 +49,20 @@ Keep WAR, RDM, SCH, and BRD at starter i119 until a specific event or a genuine 
 
 Starter i119 is sufficient to begin; it is not a reason to wait for a perfect set.
 
-## First active project: finish BLU's fighting kit
+## Immediate group project: build the minimum useful COR
+
+- [ ] <span data-task-id="cor-compensator" data-task-phase="cor" data-task-required="true"></span> **Earn 200 Domain Points and buy Compensator from Zurim in Norg.** Its Phantom Roll duration makes it a direct support upgrade. The current server cap can range from 80 to 100 Domain Points as the Mireu victory streak changes, so budget roughly two to three or more convenient days and confirm the live cap in game.
+- [ ] <span data-task-id="cor-su1" data-task-phase="cor" data-task-required="true"></span> **Reach COR's 50-Job-Point gift and Superior 1.** Stop treating Job Points as a deadline after this checkpoint; let additional JP arrive alongside useful play.
+
+Then continue the existing [Weekend-ready COR](/2026-10-03/weekend-cor.md) checklist for the roll kit, macro practice, and readiness test. Do not build a full ranged-damage suite before the support floor works.
+
+## Permanent parallel project: prepare BRD to replace COR
+
+BRD never goes back into the “someday” pile. Open the [BRD Succession Plan](/2026-10-19/weekend-brd.md) and advance its first unchecked project each week. The first major milestone is a reliable third song; the handoff happens only after the support sets and party rotation also work.
+
+Three songs are a practical learning-group milestone, not a promise that every group will accept the job. Some events and groups will require four songs or specific premium instruments; ask before volunteering and keep COR available while BRD grows.
+
+## Solo project: finish BLU's fighting kit
 
 - [ ] <span data-task-id="blu-core-spells" data-task-phase="solo" data-task-required="true"></span> **Create and finish a named core-spell list.** Cover Dual Wield, Store TP, accuracy, attack, magic offense, healing, defense, crowd control, and travel/utility. “Every spell” is a collection goal; the core list is the progression goal.
 - [ ] <span data-task-id="blu-ambuscade-clear" data-task-phase="solo" data-task-required="true"></span> **Clear the current Ambuscade Volume 2 comfortably with BLU and Trusts.** Very Easy counts. Increase difficulty only when the lower tier is routine.
@@ -63,13 +83,6 @@ Trait tiers depend on the combined trait points from every equipped spell, not m
 
 Build small equipment intentions rather than matching sets: physical TP, physical weapon skill, magical damage, and idle/damage reduction. Replace starter pieces when the replacement strengthens one of those jobs.
 
-## Second active project: build the minimum useful COR
-
-- [ ] <span data-task-id="cor-compensator" data-task-phase="cor" data-task-required="true"></span> **Earn 200 Domain Points and buy Compensator from Zurim in Norg.** Its Phantom Roll duration makes it a direct support upgrade. The current server cap can range from 80 to 100 Domain Points as the Mireu victory streak changes, so budget roughly two to three or more convenient days and confirm the live cap in game.
-- [ ] <span data-task-id="cor-su1" data-task-phase="cor" data-task-required="true"></span> **Reach COR's 50-Job-Point gift and Superior 1.** Stop treating Job Points as a deadline after this checkpoint; let additional JP arrive alongside useful play.
-
-Then continue the existing [Weekend-ready COR](/2026-10-03/weekend-cor.md) checklist for the roll kit, macro practice, and readiness test. Do not build a full ranged-damage suite before the support floor works.
-
 ## Keep THF purposeful
 
 - [ ] <span data-task-id="thf-farm-set" data-task-phase="solo" data-task-required="true"></span> **Build one functional THF farming set.** Confirm Treasure Hunter application, accuracy, movement, and an AoE or fast-kill option. Take THF out only with a named drop, currency, or material target.
@@ -79,8 +92,9 @@ THF does not need to become the next endgame damage project. Its job is to short
 ## What to defer without regret
 
 - Hard Ambuscade, Sheol: Gaol, Sortie boss routes, Prime weapons, and Master Levels.
-- Premium COR weapons and a full ranged-damage wardrobe.
-- Endgame gearing for all seven level-99 jobs.
+- Premium COR weapons and a full ranged-damage wardrobe after its support floor works.
+- BRD's fourth/fifth song, Gjallarhorn, Marsyas, and Carnwenhan as admission requirements for the first learning group. They remain long-term projects, not discarded goals.
+- Endgame gearing for every level-99 job outside the four-job core.
 - Capping every daily currency simply because a cap exists.
 
 Use the [Daily / Weekly Routine](/2026-10-19/daily-weekly.md) to decide what to do when logging in. The cited research behind this plan is saved in the [current progression note](/research/2026-10-19-current-progression-routine.md).

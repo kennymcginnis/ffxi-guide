@@ -61,6 +61,14 @@ export function renderProgress(root, { tasks, progress, persistent }) {
 	if (next) {
 		next.textContent = findNextTask(activeTasks, progress.completedTaskIds)?.title ?? 'Core route complete — choose what sounds fun next.'
 	}
+	for (const phaseNext of root.querySelectorAll('[data-progress-next-phase]')) {
+		const phaseTasks = activeTasks.filter(
+			(task) => task.phase === phaseNext.dataset.progressNextPhase,
+		)
+		phaseNext.textContent =
+			findNextTask(phaseTasks, progress.completedTaskIds)?.title ??
+			'This progression lane is complete.'
+	}
 	const temporary = root.querySelector('[data-progress-temporary]')
 	if (temporary) temporary.hidden = persistent
 	for (const phaseSlot of root.querySelectorAll('[data-progress-phase]')) {

@@ -19,6 +19,9 @@ function makeRoot(taskFixtures = []) {
 		['[data-progress-bar]', { value: 0, textContent: '' }],
 		['[data-post-99]', { hidden: true, dataset: { progressTaskId: 'setup-trusts' } }],
 	])
+	const phaseNextSlots = [
+		{ dataset: { progressNextPhase: 'brd' }, textContent: '' },
+	]
 	const markers = taskFixtures.map((fixture) => {
 		const input = {
 			checked: false,
@@ -47,10 +50,12 @@ function makeRoot(taskFixtures = []) {
 	return {
 		markers,
 		phaseSlots,
+		phaseNextSlots,
 		slots,
 		querySelectorAll: (selector) => {
 			if (selector === '[data-task-id]') return markers
 			if (selector === '[data-progress-phase]') return phaseSlots
+			if (selector === '[data-progress-next-phase]') return phaseNextSlots
 			return []
 		},
 		querySelector: (selector) => slots.get(selector) ?? null,
@@ -69,6 +74,28 @@ test('extracts task metadata and enables its rendered checkbox', () => {
 	])
 	assert.equal(root.markers[0].input.disabled, false)
 	assert.equal(root.markers[0].input.attributes.get('aria-label'), 'Unlock Trusts')
+})
+
+test('renders the next project in a dedicated phase independently of the main route', () => {
+	const root = makeRoot()
+	const tasks = [
+		{ id: 'cor-entry', title: 'Finish entry COR', phase: 'cor', required: true },
+		{ id: 'brd-skills', title: 'Cap BRD skills', phase: 'brd', required: true },
+		{ id: 'brd-three-song', title: 'Obtain a three-song instrument', phase: 'brd', required: true },
+	]
+
+	renderProgress(root, {
+		tasks,
+		progress: {
+			version: 1,
+			completedTaskIds: ['brd-skills'],
+			lastVisitedPhase: 'brd',
+		},
+		persistent: true,
+	})
+
+	assert.equal(root.slots.get('[data-progress-next]').textContent, 'Finish entry COR')
+	assert.equal(root.phaseNextSlots[0].textContent, 'Obtain a three-song instrument')
 })
 
 test('renders restored checks, totals, and the next required action', () => {

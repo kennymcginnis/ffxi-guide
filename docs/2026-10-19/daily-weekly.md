@@ -5,7 +5,7 @@
 ## Every login: two minutes
 
 1. Collect the login-campaign credit when a campaign is active.
-2. Choose **one** session anchor: BLU spell, Ambuscade, COR Job Points/practice, or a named THF farm.
+2. Choose **one** session anchor: COR readiness, the active BRD succession project, a BLU spell/Ambuscade target, or a named THF farm.
 3. Activate Records of Eminence objectives that overlap that anchor.
 4. Check inventory space, food, ammunition, and Trust lineup before traveling.
 
@@ -24,25 +24,32 @@ The October Login Campaign distributes points through **November 7** and exchang
 
 ## Once a week
 
+### One BRD succession block—always
+
+- Open the [BRD Succession Plan](weekend-brd.md) and advance its first unchecked project.
+- Keep the block finite: obtain one song or component, raise one skill, improve one support set, or practise one rotation.
+- This block remains on the routine while COR is the current party job. Once BRD passes its handoff check, it becomes normal BRD maintenance or the next large instrument project.
+
 ### One progression block
 
 Choose exactly one:
 
 - Run a comfortable Ambuscade Volume 2 block with BLU and Trusts.
 - Earn COR Capacity Points until the next useful gift.
+- Farm one material or unlock needed by the active BRD project.
 - Farm one BLU spell family or finish one BLU equipment set.
 - Use THF for one defined material or currency target.
 
 ### One preparation block
 
-- Review COR roll macros and practise applying the correct two rolls without Busting.
+- Review COR roll macros or BRD song macros and practise the current group's support loop.
 - Restock cards, ammunition, food, and medicines.
 - Check whether Sparks or Unity Accolades should be exchanged for a planned purchase or gil. Each has a 100,000-point weekly exchange limit; that is a throttle, not a quota.
 - If a weekend group may run Odyssey, pick up and hold one Moglophone in advance.
 
 ### One social attempt
 
-Ask for or join one approachable Ambuscade, Odyssey A–C, Capacity Point, or learning run. State that COR has starter i119 and is building its roll-duration set. A clear description finds better groups than pretending to be finished.
+Ask for or join one approachable Ambuscade, Odyssey A–C, Capacity Point, or learning run. Offer COR while it is the ready support job. When offering BRD, state the current song count and major instruments plainly. A clear description finds better groups than pretending to be finished.
 
 ## Once a month
 
@@ -50,7 +57,7 @@ Ask for or join one approachable Ambuscade, Odyssey A–C, Capacity Point, or le
 2. Pick **one** Ambuscade reward target; spend Hallmarks and Gallantry before the monthly reset.
 3. Complete the easy Monthly RoE objectives that overlap normal play and collect Deeds of Heroism. Deeds persist, so save toward a chosen reward.
 4. Inspect the login-campaign Trusts and unique rewards before the exchange deadline.
-5. Review the [Current Game Plan](current-game-plan.md): check completed milestones and choose the next incomplete required task.
+5. Review the [Current Game Plan](/): check the main route and confirm that BRD still has a named active project.
 
 ## Bank access, not anxiety
 
