@@ -11,6 +11,7 @@ TASK_MARKER = re.compile(r'data-task-id=["\']([^"\']+)["\']')
 DASHBOARD_TASK = re.compile(r'data-progress-task-id=["\']([^"\']+)["\']')
 CATALOG_TASK = re.compile(r"\bid:\s*['\"]([^'\"]+)['\"]")
 MARKDOWN_LINK = re.compile(r"(?<!!)\[[^\]]+\]\(([^)]+)\)")
+DOCSIFY_HOMEPAGE = re.compile(r"\bhomepage\s*:\s*['\"]([^'\"]+)['\"]")
 
 
 def _markdown_target_exists(docs_root: Path, source: Path, raw_target: str) -> bool:
@@ -21,6 +22,8 @@ def _markdown_target_exists(docs_root: Path, source: Path, raw_target: str) -> b
 
     path_text = unquote(parts.path)
     if not path_text:
+        return True
+    if path_text == "/":
         return True
     candidate = docs_root / path_text.lstrip("/") if path_text.startswith("/") else source.parent / path_text
     candidates = [candidate]
@@ -45,6 +48,13 @@ def validate_site(docs_root: Path, catalog_path: Path) -> list[str]:
             errors.append(f"duplicate catalog task id '{task_id}'")
     known_ids = set(catalog_ids)
 
+    homepage_path = None
+    index_path = docs_root / "index.html"
+    if index_path.is_file():
+        homepage_match = DOCSIFY_HOMEPAGE.search(index_path.read_text(encoding="utf-8"))
+        if homepage_match:
+            homepage_path = Path(homepage_match.group(1).lstrip("/"))
+
     markers = []
     dashboard_references = []
     for path in sorted(docs_root.rglob("*.md")):
@@ -56,11 +66,16 @@ def validate_site(docs_root: Path, catalog_path: Path) -> list[str]:
             dashboard_references.extend(DASHBOARD_TASK.findall(text))
         for raw_target in MARKDOWN_LINK.findall(text):
             target = raw_target.strip().split(maxsplit=1)[0].strip("<>")
+            parts = urlsplit(target)
             if relative.name == "_sidebar.md":
-                parts = urlsplit(target)
                 if not parts.scheme and not target.startswith(("/", "#")):
                     errors.append(
                         f"_sidebar.md: Docsify route '{target}' must start with '/'"
+                    )
+            if relative == homepage_path:
+                if not parts.scheme and not target.startswith(("/", "#")):
+                    errors.append(
+                        f"{relative}: Docsify homepage route '{target}' must start with '/'"
                     )
             if not _markdown_target_exists(docs_root, path, raw_target):
                 errors.append(f"{relative}: missing target '{target}'")

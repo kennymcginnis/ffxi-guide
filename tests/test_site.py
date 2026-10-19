@@ -120,6 +120,27 @@ class SiteIntegrityTests(unittest.TestCase):
             "\n".join(validate_site(docs, catalog)),
         )
 
+    def test_rejects_non_rooted_links_in_custom_homepage(self):
+        docs, catalog = self.make_site(
+            {
+                "_sidebar.md": "- [Home](/)\n- [Routine](/folder/routine.md)\n",
+                "index.html": (
+                    "<script>window.$docsify = { "
+                    "homepage: 'folder/home.md', relativePath: true }</script>"
+                ),
+                "folder/home.md": (
+                    '<span data-task-id="task-a"></span>\n'
+                    "[Routine](routine.md)\n"
+                ),
+                "folder/routine.md": "# Routine\n",
+            }
+        )
+
+        self.assertIn(
+            "folder/home.md: Docsify homepage route 'routine.md' must start with '/'",
+            "\n".join(validate_site(docs, catalog)),
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

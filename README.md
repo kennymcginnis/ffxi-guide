@@ -1,14 +1,14 @@
-# FFXI Return Command Center
+# FFXI Progression Command Center
 
-A personal, mostly-solo battle plan for returning to Final Fantasy XI after the level-75 era. The guide is tailored to the character snapshot in [`docs/2026-10-03/roster.md`](docs/2026-10-03/roster.md): COR, THF, WAR, RNG, SMN, and BLM at 75, with old level-75 equipment.
+A personal, mostly-solo progression plan for Final Fantasy XI with occasional weekend group play. The current guide is tailored to seven level-99 jobs in starter i119 equipment, with COR as the group focus, BLU as the solo progression job, and THF as the farming tool.
 
-The recommended route is:
+The current route is:
 
-1. restore Trusts, Records of Eminence, travel, and early Rhapsodies bonuses;
-2. take COR from 75 to 99;
-3. replace the old set with an i117 baseline and coherent i119 gear;
-4. build the minimum useful weekend-group COR toolkit;
-5. choose a longer-term job, including BRD, after that foundation works.
+1. finish any remaining Intermediate Records of Eminence objectives;
+2. build a practical BLU spell library and comfortable solo Ambuscade clear;
+3. buy Compensator and establish the minimum useful COR roll kit;
+4. keep THF focused on named farms rather than a third full gear project;
+5. use the session, weekly, and monthly routine without treating every timer as mandatory.
 
 ## Local preview
 
@@ -47,7 +47,8 @@ Export a backup before clearing browser data or moving to another device.
 
 Guide pages and navigation live in:
 
-- `docs/2026-10-03/*.md`
+- `docs/2026-10-03/*.md` for the archived return route
+- `docs/2026-10-19/*.md` for the current plan and recurring routine
 - `docs/_sidebar.md`
 - `docs/assets/task-catalog.js`
 

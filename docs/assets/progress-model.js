@@ -59,7 +59,11 @@ export function calculateProgress(taskIds, completedTaskIds) {
 
 export function findNextTask(tasks, completedTaskIds) {
 	const completed = new Set(completedTaskIds)
-	return tasks.find((task) => task.required && !completed.has(task.id)) ?? null
+	return (
+		tasks.find((task) => task.required && !completed.has(task.id)) ??
+		tasks.find((task) => !completed.has(task.id)) ??
+		null
+	)
 }
 
 export function parseProgressImport(text, knownTaskIds) {

@@ -43,7 +43,17 @@ test('returns the first incomplete required task before optional work', () => {
 	]
 
 	assert.deepEqual(findNextTask(tasks, ['required-1']), tasks[2])
-	assert.equal(findNextTask(tasks, ['required-1', 'required-2']), null)
+	assert.deepEqual(findNextTask(tasks, ['required-1', 'required-2']), tasks[0])
+})
+
+test('returns optional work after every required task is complete', () => {
+	const tasks = [
+		{ id: 'required', required: true },
+		{ id: 'optional', required: false },
+	]
+
+	assert.equal(findNextTask(tasks, ['required'])?.id, 'optional')
+	assert.equal(findNextTask(tasks, ['required', 'optional']), null)
 })
 
 test('normalizes progress and removes duplicate and unknown task ids', () => {

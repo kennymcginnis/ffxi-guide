@@ -99,6 +99,44 @@ test('renders restored checks, totals, and the next required action', () => {
 	assert.equal(root.phaseSlots[1].textContent, '0/1 · 0%')
 })
 
+test('excludes archived tasks from active dashboard progress', () => {
+	const root = makeRoot([
+		{ id: 'old-return-task', title: 'Old return task', phase: 'setup', required: true },
+		{ id: 'current-goal', title: 'Build current gear', phase: 'level', required: true },
+	])
+	const tasks = [
+		{
+			id: 'old-return-task',
+			title: 'Old return task',
+			phase: 'setup',
+			required: true,
+			active: false,
+		},
+		{
+			id: 'current-goal',
+			title: 'Build current gear',
+			phase: 'level',
+			required: true,
+		},
+	]
+
+	renderProgress(root, {
+		tasks,
+		progress: {
+			version: 1,
+			completedTaskIds: ['old-return-task'],
+			lastVisitedPhase: 'setup',
+		},
+		persistent: true,
+	})
+
+	assert.equal(root.markers[0].input.checked, true)
+	assert.equal(root.slots.get('[data-progress-summary]').textContent, '0 of 1 tasks complete · 0%')
+	assert.equal(root.slots.get('[data-progress-next]').textContent, 'Build current gear')
+	assert.equal(root.phaseSlots[0].textContent, '0/0 · 0%')
+	assert.equal(root.phaseSlots[1].textContent, '0/1 · 0%')
+})
+
 test('shows a temporary-progress notice when persistence is unavailable', () => {
 	const root = makeRoot()
 

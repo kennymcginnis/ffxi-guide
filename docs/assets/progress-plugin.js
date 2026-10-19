@@ -38,13 +38,14 @@ export function extractTasks(root) {
 
 export function renderProgress(root, { tasks, progress, persistent }) {
 	const completed = new Set(progress.completedTaskIds)
+	const activeTasks = tasks.filter((task) => task.active !== false)
 	for (const marker of root.querySelectorAll('[data-task-id]')) {
 		const checkbox = marker.closest('li')?.querySelector('input[type="checkbox"]')
 		if (checkbox) checkbox.checked = completed.has(marker.dataset.taskId)
 	}
 
 	const totals = calculateProgress(
-		tasks.map((task) => task.id),
+		activeTasks.map((task) => task.id),
 		progress.completedTaskIds,
 	)
 	const summary = root.querySelector('[data-progress-summary]')
@@ -58,12 +59,12 @@ export function renderProgress(root, { tasks, progress, persistent }) {
 	}
 	const next = root.querySelector('[data-progress-next]')
 	if (next) {
-		next.textContent = findNextTask(tasks, progress.completedTaskIds)?.title ?? 'Core route complete — choose what sounds fun next.'
+		next.textContent = findNextTask(activeTasks, progress.completedTaskIds)?.title ?? 'Core route complete — choose what sounds fun next.'
 	}
 	const temporary = root.querySelector('[data-progress-temporary]')
 	if (temporary) temporary.hidden = persistent
 	for (const phaseSlot of root.querySelectorAll('[data-progress-phase]')) {
-		const phaseTasks = tasks.filter(
+		const phaseTasks = activeTasks.filter(
 			(task) => task.phase === phaseSlot.dataset.progressPhase,
 		)
 		const phaseProgress = calculateProgress(

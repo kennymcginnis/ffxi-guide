@@ -17,11 +17,11 @@ Do not spend hours optimizing i117. Its job is to let you enter the content that
 
 ## 2. Follow the tutorial bridge
 
-- [ ] <span data-task-id="roe-intermediate" data-task-phase="post-99" data-task-required="true"></span> **Complete the tutorial and intermediate RoE objectives.** Work through the item-level progression prompts, unlock required battlefields/content, and keep the objective rewards. If an objective name differs from a guide, trust the current in-game RoE menu.
+This was part of the original return route. The live checklist now keeps the remaining RoE confirmation in the [Current Game Plan](/2026-10-19/current-game-plan.md).
 
 ## 3. Start monthly repeatable gearing
 
-- [ ] <span data-task-id="ambuscade-started" data-task-phase="post-99" data-task-required="true"></span> **Unlock and begin Ambuscade.** Start at a difficulty your Trust party can clear reliably. Monthly enemies, mechanics, and rewards rotate, so read the current primer before entering.
+- [ ] <span data-task-id="ambuscade-started" data-task-phase="post-99" data-task-required="true"></span> **Unlock and begin Ambuscade.** This historical milestone is already complete; the current BLU milestone uses a separate checklist item so saved progress cannot mark it complete accidentally.
 
 Priority for early currency:
 

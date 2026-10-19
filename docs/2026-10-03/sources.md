@@ -1,6 +1,6 @@
 # Sources and Freshness
 
-Reviewed **October 3, 2026**. Official sources establish systems and effects; community sources fill in camp choices, quest routing, and other operational details. Monthly campaigns, Ambuscade enemies, server populations, and market prices are intentionally not frozen into this guide.
+Core return sources reviewed **October 3, 2026**; current progression sources reviewed **October 19, 2026**. Official sources establish systems and effects; community sources fill in camp choices, quest routing, and other operational details. Monthly campaigns, Ambuscade enemies, server populations, and market prices are intentionally not frozen into this guide.
 
 ## Official sources
 
@@ -14,6 +14,10 @@ Reviewed **October 3, 2026**. Official sources establish systems and effects; co
 - <span class="source-badge">Official</span> [Corsair job mechanics](https://www.playonline.com/pcd/update/ff11us/20060418lfQ7d3/detail.html) — Phantom Roll, Quick Draw, and Random Deal identity.
 - <span class="source-badge">Official</span> [COR roll interaction with Capacity Points](https://forum.square-enix.com/ffxi/archive/index.php/t-43135.html) — why Corsair's Roll remains progression-relevant.
 - <span class="source-badge">Official</span> [Current PlayOnline topics](https://www.playonline.com/pcd/topics/ff11us/list.html) — check campaigns and version updates before a session.
+- <span class="source-badge">Official</span> [Domain Invasion point revision](https://forum.square-enix.com/ffxi/threads/56243-December-10-2019-%28JST%29-Version-Update?p=622467&viewfull=1) — personal daily-point system used by the Compensator route.
+- <span class="source-badge">Official</span> [Sparks and Accolades exchange limit](https://forum.square-enix.com/ffxi/threads/56924?p=628113&viewfull=1) — the weekly 100,000-point exchange throttle.
+- <span class="source-badge">Official</span> [Odyssey and Sortie returning-player guide](https://we-are-vanadiel.finalfantasyxi.com/post/?id=721&lang=en) — current entry-item and charge behavior.
+- <span class="source-badge">Official</span> [October 2026 Login Campaign](https://www.playonline.com/ff11us/campaign/login/login160.html) — dated Koru-Moru opportunity and exchange deadline.
 
 ## Community operational sources
 
@@ -26,6 +30,7 @@ Reviewed **October 3, 2026**. Official sources establish systems and effects; co
 - <span class="source-badge">Community</span> [BG-Wiki Berserk](https://www.bg-wiki.com/ffxi/Berserk) — WAR15 requirement and the attack/defense tradeoff behind the DNC/WAR recommendation.
 - <span class="source-badge">Community</span> [Community Dancer Guide](https://www.bg-wiki.com/ffxi/Community_Dancer_Guide) — situational support-job choices for DNC as a level-99 main job.
 - <span class="source-badge">Community</span> [Support Job](https://www.bg-wiki.com/ffxi/Support_Job) — normal level-49 cap at main-job level 99 and Master Level increases up to 59.
+- <span class="source-badge">Community</span> [Domain Invasion rewards](https://www.bg-wiki.com/ffxi/Domain_Invasion_Rewards) — Zurim's operational reward catalogue, including Compensator.
 
 ## How to maintain this guide
 

@@ -5,17 +5,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta
 			name="description"
-			content="A personalized, mostly-solo battle plan for returning to Final Fantasy XI after the level-75 era."
+			content="A personalized Final Fantasy XI progression plan for solo play and weekend groups."
 		/>
-		<title>FFXI Return Command Center</title>
+		<title>FFXI Progression Command Center</title>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/themes/vue.css" />
 		<link rel="stylesheet" href="./assets/theme.css" />
 	</head>
 	<body>
-		<div id="app">Opening the return plan…</div>
+		<div id="app">Opening the current game plan…</div>
 		<noscript>
 			This guide requires JavaScript for navigation. You can still
-			<a href="./2026-10-03/battle-plan.md">read the battle plan as Markdown</a>.
+			<a href="./2026-10-19/current-game-plan.md">read the current game plan as Markdown</a>.
 		</noscript>
 		<script type="module">
 			import { createProgressStore, getSafeStorage } from './assets/progress-model.js'
@@ -27,9 +27,9 @@
 				'ffxi-return-progress-v1',
 			)
 			window.$docsify = {
-				name: 'FFXI Return Command Center',
+				name: 'FFXI Progression Command Center',
 				repo: 'https://github.com/kennymcginnis/ffxi-guide',
-				homepage: '2026-10-03/battle-plan.md',
+				homepage: '2026-10-19/current-game-plan.md',
 				loadSidebar: true,
 				relativePath: true,
 				alias: { '/.*/_sidebar.md': '/_sidebar.md' },
@@ -44,10 +44,10 @@
 						}),
 				],
 				search: {
-					placeholder: 'Search the battle plan',
+					placeholder: 'Search the progression guide',
 					noData: 'No matching guide entry',
 					depth: 3,
-					namespace: 'ffxi-return-2026-10-03-v1',
+					namespace: 'ffxi-progression-2026-10-19-v1',
 				},
 			}
 
