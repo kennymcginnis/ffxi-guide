@@ -50,8 +50,11 @@ Guide pages and navigation live in:
 
 - `docs/2026-10-03/*.md` for the archived return route
 - `docs/2026-10-19/*.md` for the current plan and recurring routine
+- `docs/2026-10-27/*.md` for the BRD equipment tracker and GearSwap handoff
 - `docs/_sidebar.md`
 - `docs/assets/task-catalog.js`
+
+Downloadable game configuration examples live under `docs/assets/gearswap/`. They are starter files to personalize, not generated best-in-slot sets.
 
 Each persistent checkbox needs one unique inline marker:
 

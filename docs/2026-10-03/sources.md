@@ -33,6 +33,9 @@ Core return sources reviewed **October 3, 2026**; current progression sources re
 - <span class="source-badge">Community</span> [Domain Invasion rewards](https://www.bg-wiki.com/ffxi/Domain_Invasion_Rewards) — Zurim's operational reward catalogue, including Compensator.
 - <span class="source-badge">Community</span> [Song mechanics](https://www.bg-wiki.com/ffxi/Category%3AString_instrument) — active-song limits, skill interaction, potency, and duration mechanics used by the BRD succession plan.
 - <span class="source-badge">Community</span> [Terpander](https://www.bg-wiki.com/ffxi/Terpander) and [Blurred Harp](https://www.bg-wiki.com/ffxi/Blurred_Harp) — practical three-song instrument routes and equipment requirements.
+- <span class="source-badge">Community · 2022 opinion</span> [Obamiwannabuffya: A Bard Guide by Funkworkz](https://www.bg-wiki.com/ffxi/Obamiwannabuffya:_A_Bard_Guide_by_Funkworkz) — source for the BRD set roles, named equipment, support-job notes, and GearSwap workflow; supplied by email October 27, 2026, but last major guide update is November 23, 2022.
+- <span class="source-badge">Community</span> [JSE capes](https://www.bg-wiki.com/ffxi/Category:JSE_Capes) — Intarabus's Cape augmentation costs and monthly purchase limits.
+- <span class="source-badge">Community</span> [Ruspix](https://www.bg-wiki.com/ffxi/Ruspix) and [Ra'Kaznar Sapphire](https://www.bg-wiki.com/ffxi/Ra%27Kaz._Sapphire) — Sortie entry-by-job unlock, Gallimaufry purchases, and Fili +2 upgrade material route.
 
 ## How to maintain this guide
 

@@ -30,6 +30,8 @@ Early priorities:
 
 Reforged artifact, relic, and Empyrean pieces often remain useful because of their song-specific bonuses. Check the exact piece before upgrading an entire set.
 
+Use the [BRD Gear & GearSwap checklist](../2026-10-27/brd-gear-checklist.md) for the owned-item tracker, acquisition order, set roles, and downloadable Lua scaffold.
+
 ## 4. Practise the real party loop
 
 - [ ] <span data-task-id="brd-party-practice" data-task-phase="brd" data-task-required="true"></span> **Run the full support loop without losing song slots.** Apply three requested songs, split songs with Pianissimo, preserve your own songs with Tenuto when useful, sleep adds, remove dangerous buffs with Finale, and refresh before songs collapse during a mechanic.

@@ -3,6 +3,7 @@
 	- [Daily / Weekly Routine](/2026-10-19/daily-weekly.md)
 	- [Weekend-ready COR](/2026-10-03/weekend-cor.md)
 	- [BRD Succession Plan](/2026-10-19/weekend-brd.md)
+	- [BRD Gear & GearSwap](/2026-10-27/brd-gear-checklist.md)
 	- [Current Roster](/2026-10-03/roster.md)
 - Archived Return Route
 	- [Original Battle Plan](/2026-10-03/battle-plan.md)
