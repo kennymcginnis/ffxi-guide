@@ -142,5 +142,33 @@ class SiteIntegrityTests(unittest.TestCase):
         )
 
 
+class BardGuideContentTests(unittest.TestCase):
+    def test_compares_finans_without_turning_dd_gear_into_support_requirements(self):
+        repository = Path(__file__).resolve().parents[1]
+        guide = (repository / "docs/2026-10-27/brd-gear-checklist.md").read_text(
+            encoding="utf-8"
+        )
+        sources = (repository / "docs/2026-10-03/sources.md").read_text(
+            encoding="utf-8"
+        )
+        lua = (repository / "docs/assets/gearswap/brd_gearsets.lua").read_text(
+            encoding="utf-8"
+        )
+        finans_section = guide.split("## Finans comparison and alternatives", 1)[1].split(
+            "\n## ", 1
+        )[0]
+
+        self.assertIn("## Finans comparison and alternatives", guide)
+        self.assertIn("ML50", guide)
+        self.assertIn("Nyame Path B", guide)
+        self.assertIn("Null Masque", guide)
+        self.assertIn("Null Shawl", guide)
+        self.assertIn("### DD BRD later", guide)
+        self.assertIn("Finans_Gearset_Guides/Bard", sources)
+        self.assertNotIn("data-task-id", finans_section)
+        for aspirational_item in ("Null Masque", "Null Shawl", "Naegling", "Centovente"):
+            self.assertNotIn(aspirational_item, lua)
+
+
 if __name__ == "__main__":
     unittest.main()

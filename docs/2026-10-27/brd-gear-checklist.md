@@ -130,6 +130,48 @@ These are alternatives and refinements, not a mandate to collect every sidegrade
 
 For your stated goal, the usual order is **three-song competence → fourth-song route → potency/duration projects**. A specific weekend group may move Marsyas or Gjallarhorn ahead; ask before spending months on assumptions.
 
+## Finans comparison and alternatives
+
+[Finans' BRD gearsets](https://www.bg-wiki.com/ffxi/Finans_Gearset_Guides/Bard) complement the Funkworkz guide rather than replacing it. Funkworkz explains the song sets that make a BRD useful; Finans concentrates on polished idle, TP, and weapon-skill sets. The Finans page assumes **ML50**, **maximum augments**, **Nyame Path B**, **Schneddick Ring**, and **Ephramad's Ring**. Treat its sets as high-end examples, not a shopping list for entering weekend content.
+
+| Need | Funkworkz / this guide | Finans adds | Decision for you |
+| --- | --- | --- | --- |
+| Song precast, potency, duration, and accuracy | Detailed support sets and the current checklist | No replacement song-casting sets | Keep building these first. They are what qualify BRD for a support slot. |
+| Defensive idle | A practical mix of Defending Ring, Loricate Torque +1, Flume Belt +1, Nyame/Volte pieces, and earned alternatives | A complete DT/magic-evasion set centered on Daybreak, Genmei Shield, defensive Linos, Null Masque/Shawl, Nyame, Odnowa +1, Alabaster, Murky, and Shadow Ring | Upgrade one slot at a time; do not delay songs for the complete Finans set. |
+| Refresh idle | Refresh pieces as available | A separate high-end set using Mpaca's Staff/Enki Strap, Kaykaus Bliaut +1, Fili +3 pieces, Fili Earring +2, two Stikini +1 rings, and defensive accessories | Convenience after survivability. Keep the current one-Stikini purchase rule; a second +1 is not an early priority. |
+| Melee TP and weapon skills | Deliberately deferred | Single-wield, dual-wield, and numerous WS sets | Build only after the support kit works and a group actually wants BRD contributing damage. |
+
+### Practical idle alternatives by slot
+
+These are choices, not additional owned-item checkboxes. A piece is valuable only if the resulting set maintains the damage reduction, magic evasion, Refresh, or movement you need.
+
+| Slot or purpose | Finans target | Practical bridge or alternative | Priority |
+| --- | --- | --- | --- |
+| Main / sub | **Daybreak + Genmei Shield** | Keep **Kali** or **Legato Dagger** while idle if that is what you own; use **Ammurapi Shield** for song midcast, not as proof that the defensive idle set is finished. | Daybreak and Genmei are good earned upgrades, but neither unlocks your support role. |
+| Range | A second **Linos** augmented with VIT, magic evasion, and PDT | Keep your song-oriented Linos for casting. Do not overwrite useful song or DD augments merely to copy the idle set. | Make separate augmented copies only when inventory and augment budget permit. |
+| Head | **Null Masque** | **Nyame Helm**, **Inyanga Tiara +2**, or another defensive i119 head you already own | Null Masque is an ideal target, not an immediate gate. |
+| Body / hands / legs / feet | **Nyame Mail, Gauntlets, Flanchard, and Sollerets** | Mix your best **Nyame, Inyanga, Ayanmo, Volte,** or reforged JSE pieces according to the actual defensive stats | Improve the weakest slot first; a mixed set is normal. |
+| Neck | **Loricate Torque +1** | NQ Loricate if available; otherwise keep the best defensive neck you already own | The +1 remains on the current checklist and is useful across jobs. |
+| Earrings | **Odnowa Earring +1 + Alabaster Earring** | **Etiolation Earring** and other defensive earrings already in your wardrobe | Alabaster is attractive across the Finans TP/WS sets too, but it is not required to sing. |
+| Rings | **Murky Ring + Shadow Ring** | **Defending Ring**, **Moonbeam/Moonlight Ring**, or **Gelatinous Ring +1**, chosen for the damage profile | Defending Ring is the broad early target. Finans' pair is a later refinement. |
+| Back | **Null Shawl** | **Moonbeam Cape** or a defensive **Intarabus's Cape**; keep a separate song-casting cape if its augments serve another job | Null Shawl is a strong shared endgame target, not a reason to repurpose your only support cape. |
+| Waist | **Flume Belt +1** | **Carrier's Sash** when elemental resistance matters | Flume remains the practical physical-idle target already on the checklist. |
+| Refresh package | **Mpaca's Staff, Enki Strap, Kaykaus Bliaut +1, Fili +3 hands/legs, Fili Earring +2, two Stikini +1, Sibyl Scarf** | Add Refresh pieces individually while retaining enough DT for the content | Do not buy a second Stikini +1 or chase +3 armor before the song rotation and defensive idle set are dependable. |
+
+The defensive and Refresh versions of Linos are **different augment projects** from a song or melee Linos. Always use the exact augment table from `//gs export`; a name-only Lua entry cannot distinguish two copies reliably.
+
+### DD BRD later
+
+Finans' melee sets converge on several reusable pieces: **Naegling**, **Genmei Shield** or **Centovente**, DA/QA **Linos**, **Bunzi's Hat/Gloves**, **Ashera Harness**, **Nyame**, **Bard's Charm +2**, **Alabaster Earring**, **Chirich Ring +1**, **Sailfi Belt +1**, and **Null Shawl**. Those are sensible alternatives to remember when they drop, but they should not consume the current Daurdabla/Gjallarhorn budget.
+
+- Start with **single-wield Naegling + Genmei Shield** if BRD damage becomes useful; it retains a defensive off-hand and asks for fewer specialized pieces.
+- Treat **Naegling + Centovente dual wield** as a separate `/NIN` or `/DNC` set. Its value depends on total magic/equipment haste and dual-wield needs, so do not copy it into every party situation.
+- Finans includes sets for **Savage Blade, Fast Blade II, Sanguine Blade, Retribution, Full Swing, Ruthless Stroke, Rudra's Storm, Mordant Rime, Exenterator, Mercy Stroke, Evisceration,** and **Aeolian Edge**. You do not need a finished set for every listed weapon skill to begin supporting a party.
+- When you eventually build one damage lane, begin with **Savage Blade / Naegling** because it overlaps your existing COR/WAR ecosystem. Add a magical **Aeolian Edge or Sanguine Blade** set only for a specific use, then dagger/REMA sets after you own the relevant weapon.
+- Do not blindly copy Finans' **Bihu Justaucorps +4**, REMA weapons, Ephramad's Ring, or capped Nyame assumptions. Substitute the best piece you actually own, then compare results in the content you play.
+
+No Finans alternative has been made an active line in the starter Lua. Equipping aspirational items you do not own would create silent partial swaps; add each piece only after acquisition, and keep defensive, Refresh, song-casting, TP, and WS sets separate.
+
 ## What each GearSwap set does
 
 | Set | When it equips | What belongs in it |
@@ -172,6 +214,6 @@ The prioritized checklist above keeps the decision surface small. These addition
 
 ## Source and freshness
 
-This is a condensed, reorganized interpretation of [Obamiwannabuffya: A Bard Guide by Funkworkz](https://www.bg-wiki.com/ffxi/Obamiwannabuffya:_A_Bard_Guide_by_Funkworkz), supplied by email on **October 27, 2026**. The source labels itself an opinion guide and lists **November 23, 2022** as its latest major update. Item stats, acquisition routes, group expectations, and newer equipment should be verified against current BG-Wiki pages and in game before a large investment.
+This is a condensed, reorganized interpretation of [Obamiwannabuffya: A Bard Guide by Funkworkz](https://www.bg-wiki.com/ffxi/Obamiwannabuffya:_A_Bard_Guide_by_Funkworkz) plus [Finans Gearset Guides/Bard](https://www.bg-wiki.com/ffxi/Finans_Gearset_Guides/Bard), both supplied by email on **October 27, 2026**. Funkworkz labels itself an opinion guide and lists **November 23, 2022** as its latest major update; Finans describes personal, situational ML50/max-augment sets. Item stats, acquisition routes, group expectations, and newer equipment should be verified against current BG-Wiki pages and in game before a large investment.
 
 Gil-access classifications were rechecked **October 27, 2026** against [Stikini Ring +1](https://www.bg-wiki.com/ffxi/Stikini_Ring_%2B1), [Blurred Harp](https://www.bg-wiki.com/ffxi/Blurred_Harp), [instrument song-count data](https://www.bg-wiki.com/ffxi/Category%3AWind_Instrument), [Unity equipment flags](https://www.bg-wiki.com/ffxi/April_2020_Version_Update_Changes/Existing_Items), and current item pages. Verify your world's stock and transaction history immediately before bidding.
